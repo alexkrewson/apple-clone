@@ -8,6 +8,11 @@
     margin-right: 7px;
 } */
 
+a.hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .top {
     background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
     /* height: 550px; */
@@ -24,34 +29,97 @@
 .bottom {
     display: block;
     clear: left;
-    
     /* height: 200px; */
 }
 
 .bottom-flex-container {
     display: flex;
     justify-content: flex-start;
-
+    border-top: 2px solid #fff;
 }
 
-.bottom img {
+.bottom-flex-container img:hover {
+    cursor: pointer;
+}
+
+.bottom-flex-container img {
+    /* margin-left: -21.22px; */
+    /* margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    margin-left: -12.75px;
+    margin-right: -12.75px;
+    height: 200px;
+}
+
+.bottom a {
     /* width: 333px; */
     /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]; */
     /* flex-basis: minmax(); */
     /* width: 338px;
     flex-shrink: 1; */
-    flex: 1 0 220px;
-    padding: 2px 1px 2px 1px;
+    /* flex: 0 1 337.5px; */
+    /* padding: 2px 1px 2px 1px; */
+    overflow: hidden;
+    display: block;
+    flex-shrink: 0;
+    height: 198 px;
+}
+
+.promo1 {
+    width: 338.5px;
+    /* margin-left: -1px; */
+}
+
+.promo4 {
+    border-left: 2px solid #fff;
+    width: 337.5px;
+}
+
+.promo2, .promo3 {
+    border-left: 2px solid #fff;
+    width: 336.5px;
+    padding-left: -1px;
+}
+
+.promo2 img {
+    margin-left: -13.75px;
+}
+
+.promo3 img {
+    margin-left: -13.75px;
+}
+
+.promo4 img {
+    margin-left: -11.75px;
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.footer-top p {
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 10px;
+    color: #6e6e6e;
+}
+
+footer a {
+    color: #08c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer {
     font-size: 10px;
-    width: 1030px;
+    width: 980px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -159,12 +227,14 @@ footer {
 }
 
 .nav input {
-    width: 100%;
+    width: 68%;
     height: 19px;
-    padding: 2px 18px 1px 22px;
-    background-image: none;
+    padding: 2px 18px 1px 0px;
+    background: none;
     border-radius: 12px;
-    opacity: 0;
+    /* opacity: 0; */
+    border: none;
+    margin-left: 22px;
 }
 
 .nav-apple span {
@@ -273,5 +343,79 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    
+}
+
+.film a {
+    height: 32px;
+    margin-left: 187px;
+    margin-top: 23px;
+    display: block;
+    background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png);
+    background-repeat: no-repeat;
+}
+
+.film a:hover {
+    height: 32px;
+    margin-left: 187px;
+    /* margin-top: 23px; */
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    display: block;
+    background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png);
+    /* background-repeat: no-repeat; */
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-position: 0% 99%;
+}
+
+.footer-bottom-links {
+    padding-right: 0px;
+    margin-right: -22px;
+}
+
+.footer-bottom-links a {
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-width: 1px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 10px;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-bottom-links a:last-child {
+    border-right-style: none;
+}
+
+.footer-bottom-links img {
+    margin-bottom: -4px;
+}
+
+.footer-bottom {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 10px;
+    color: #6e6e6e;
+    padding-bottom: 15px;
+}
+
+.footer-bottom a {
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-width: 1px;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-bottom a:last-child {
+    border-style: none;
 }
